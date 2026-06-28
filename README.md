@@ -1,6 +1,8 @@
 # gaokao-guide 高考志愿指南
 
-`gaokao-guide` 是一个面向中国高考家庭的 Codex Skill，用于高考填志愿、高考报志愿、高考志愿填报、选大学、选专业、冲稳保排序、院校专业组风险审计、专业调剂审计、志愿表审计、学校体检、专业核实、看板输出和一页式信息图生成。
+`gaokao-guide` 是一个面向中国高考家庭的通用 LLM 指令包，同时适配 Codex Skill。它可用于高考填志愿、高考报志愿、高考志愿填报、选大学、选专业、冲稳保排序、院校专业组风险审计、专业调剂审计、志愿表审计、学校体检、专业核实、看板输出和一页式信息图生成。
+
+它不只限于 Codex。你也可以把它放进 ChatGPT 自定义 GPT、Claude Project、Gemini Gems、OpenAI API system prompt、本地大模型或其他支持长提示词/知识库的 LLM 工具里使用。
 
 ## 适合什么场景
 
@@ -28,6 +30,8 @@
 
 ```text
 gaokao-guide/
+├── README.md
+├── UNIVERSAL_PROMPT.md             # 通用 LLM 复制版提示词
 ├── SKILL.md
 ├── agents/
 │   └── openai.yaml
@@ -45,6 +49,32 @@ gaokao-guide/
     ├── audit_candidates.py         # 候选表审计脚本
     └── render_summary_svg.py       # SVG 信息图生成脚本
 ```
+
+## 在不同 LLM 中使用
+
+### Codex
+
+直接使用 `gaokao-guide/SKILL.md` 作为 Skill 入口，`references/` 作为按需加载资料，`scripts/` 作为可执行工具。
+
+### ChatGPT 自定义 GPT / Claude Project / Gemini Gems
+
+把 [UNIVERSAL_PROMPT.md](UNIVERSAL_PROMPT.md) 复制到系统提示词或项目说明里，再把 `references/` 目录中的资料作为知识库上传。推荐至少上传：
+
+- `references/intake-form.md`
+- `references/evidence-ledger.md`
+- `references/strategy-and-portfolio.md`
+- `references/major-career-map.md`
+- `references/school-major-audit.md`
+- `references/dashboard-templates.md`
+- `references/infographic-output.md`
+
+### OpenAI API / 本地 LLM
+
+把 `UNIVERSAL_PROMPT.md` 放进 system prompt。若上下文长度有限，优先放入问诊、证据账本、策略组合和输出模板；需要执行表格审计或信息图生成时，再调用 `scripts/` 中的 Python 脚本。
+
+### 能不能“一键安装到任何 LLM”
+
+不同 LLM 平台没有统一的 Skill 安装标准，所以不能保证像 Codex 一样自动识别 `SKILL.md`。但这个仓库的核心能力是可迁移的：把通用提示词作为系统指令，把 references 作为知识库，把 scripts 作为外部工具即可。
 
 ## 示例提问
 
