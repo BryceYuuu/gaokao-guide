@@ -56,6 +56,24 @@ gaokao-guide/
 
 直接使用 `gaokao-guide/SKILL.md` 作为 Skill 入口，`references/` 作为按需加载资料，`scripts/` 作为可执行工具。
 
+安装到当前用户的 Codex skills 目录：
+
+```bash
+python3 install.py
+```
+
+默认安装位置是：
+
+```text
+${CODEX_HOME:-~/.codex}/skills/gaokao-guide
+```
+
+如果你的运行环境提示 `/mnt/skills` 是系统只读挂载，这是正常的。不要把 `/mnt/skills` 当作永久安装目录；使用上面的 `install.py` 会自动安装到用户可写目录。也可以手动指定：
+
+```bash
+python3 install.py --target ~/.codex/skills
+```
+
 ### ChatGPT 自定义 GPT / Claude Project / Gemini Gems
 
 把 [UNIVERSAL_PROMPT.md](UNIVERSAL_PROMPT.md) 复制到系统提示词或项目说明里，再把 `references/` 目录中的资料作为知识库上传。推荐至少上传：
