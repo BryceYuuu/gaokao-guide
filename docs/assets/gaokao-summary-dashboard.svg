@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1600" viewBox="0 0 1200 1600">
+<defs>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+    <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#0f172a" flood-opacity="0.10"/>
+  </filter>
+  <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+    <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.08"/>
+  </filter>
+  <linearGradient id="heroGrad" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#0B1220"/>
+    <stop offset="54%" stop-color="#111827"/>
+    <stop offset="100%" stop-color="#172554"/>
+  </linearGradient>
+  <linearGradient id="blueGrad" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#2563EB"/>
+    <stop offset="100%" stop-color="#60A5FA"/>
+  </linearGradient>
+  <linearGradient id="panelGrad" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#FFFFFF"/>
+    <stop offset="100%" stop-color="#F8FAFC"/>
+  </linearGradient>
+  <pattern id="dotGrid" width="32" height="32" patternUnits="userSpaceOnUse">
+    <circle cx="2" cy="2" r="1.5" fill="#93C5FD" opacity="0.28"/>
+  </pattern>
+</defs>
+<rect x="0" y="0" width="1200" height="1600" fill="#F6F8FB" stroke="none" stroke-width="1"/>
+<rect x="48" y="48" width="1104" height="178" rx="30" fill="#172033" stroke="none" stroke-width="1" filter="url(#shadow)"/>
+<text x="96" y="125" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="48" font-weight="900" fill="#FFFFFF" text-anchor="start">高考志愿方案看板</text>
+<text x="98" y="176" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="26" font-weight="600" fill="#BFDBFE" text-anchor="start">江苏 2026 物理类 | 位次约 34500 | 模拟稿</text>
+<text x="1004" y="128" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="28" font-weight="900" fill="#FFFFFF" text-anchor="middle">SVG</text>
+<text x="1004" y="166" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="600" fill="#94A3B8" text-anchor="middle">summary</text>
+<rect x="48" y="258" width="1104" height="104" rx="22" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#softShadow)"/>
+<text x="83" y="296" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="17" font-weight="600" fill="#64748B" text-anchor="start">省份</text>
+<text x="83" y="332" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="25" font-weight="800" fill="#172033" text-anchor="start">江苏</text>
+<text x="259" y="296" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="17" font-weight="600" fill="#64748B" text-anchor="start">年份</text>
+<text x="259" y="332" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="25" font-weight="800" fill="#172033" text-anchor="start">2026</text>
+<text x="435" y="296" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="17" font-weight="600" fill="#64748B" text-anchor="start">科类</text>
+<text x="435" y="332" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="25" font-weight="800" fill="#172033" text-anchor="start">物理类</text>
+<text x="611" y="296" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="17" font-weight="600" fill="#64748B" text-anchor="start">分数/位次</text>
+<text x="611" y="332" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="25" font-weight="800" fill="#172033" text-anchor="start">约 34500</text>
+<text x="825" y="296" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="17" font-weight="600" fill="#64748B" text-anchor="start">预算</text>
+<text x="825" y="332" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="25" font-weight="800" fill="#172033" text-anchor="start">需核验</text>
+<text x="1001" y="296" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="17" font-weight="600" fill="#64748B" text-anchor="start">策略</text>
+<text x="1001" y="332" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="25" font-weight="800" fill="#172033" text-anchor="start">稳中带冲</text>
+<rect x="48" y="398" width="258" height="170" rx="22" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#softShadow)"/>
+<circle cx="82" cy="436" r="10" fill="#D97706" stroke="none" stroke-width="1"/>
+<text x="102" y="444" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="800" fill="#D97706" text-anchor="start">黄灯</text>
+<text x="76" y="490" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="27" font-weight="900" fill="#172033" text-anchor="start">录取安全</text>
+<text x="76" y="526" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="500" fill="#64748B" text-anchor="start">
+<tspan x="76" dy="0">有方案，但保底看专业组下限</tspan>
+</text>
+<rect x="330" y="398" width="258" height="170" rx="22" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#softShadow)"/>
+<circle cx="364" cy="436" r="10" fill="#16A34A" stroke="none" stroke-width="1"/>
+<text x="384" y="444" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="800" fill="#16A34A" text-anchor="start">绿灯</text>
+<text x="358" y="490" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="27" font-weight="900" fill="#172033" text-anchor="start">专业匹配</text>
+<text x="358" y="526" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="500" fill="#64748B" text-anchor="start">
+<tspan x="358" dy="0">电子信息/电气/自动化适配</tspan>
+</text>
+<rect x="612" y="398" width="258" height="170" rx="22" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#softShadow)"/>
+<circle cx="646" cy="436" r="10" fill="#D97706" stroke="none" stroke-width="1"/>
+<text x="666" y="444" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="800" fill="#D97706" text-anchor="start">黄灯</text>
+<text x="640" y="490" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="27" font-weight="900" fill="#172033" text-anchor="start">城市偏好</text>
+<text x="640" y="526" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="500" fill="#64748B" text-anchor="start">
+<tspan x="640" dy="0">热门城市会压缩选择空间</tspan>
+</text>
+<rect x="894" y="398" width="258" height="170" rx="22" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#softShadow)"/>
+<circle cx="928" cy="436" r="10" fill="#DC2626" stroke="none" stroke-width="1"/>
+<text x="948" y="444" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="800" fill="#DC2626" text-anchor="start">红灯</text>
+<text x="922" y="490" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="27" font-weight="900" fill="#172033" text-anchor="start">最大风险</text>
+<text x="922" y="526" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="500" fill="#64748B" text-anchor="start">
+<tspan x="922" dy="0">服从调剂进排斥专业</tspan>
+</text>
+<rect x="48" y="610" width="526" height="458" rx="24" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#softShadow)"/>
+<text x="78" y="665" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="30" font-weight="800" fill="#172033" text-anchor="start">候选池分层</text>
+<text x="78" y="701" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="400" fill="#64748B" text-anchor="start">先保可接受，再谈冲刺</text>
+<rect x="78" y="738" width="466" height="48" rx="15" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+<rect x="92" y="749" width="46" height="26" rx="13" fill="#DC2626" stroke="#DC2626" stroke-width="1" opacity="0.14"/>
+<text x="115" y="769" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="900" fill="#DC2626" text-anchor="middle">冲</text>
+<text x="158" y="769" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="22" font-weight="800" fill="#172033" text-anchor="start">热门城市强专业</text>
+<text x="520" y="769" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="900" fill="#DC2626" text-anchor="end">黄/红</text>
+<rect x="78" y="800" width="466" height="48" rx="15" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+<rect x="92" y="811" width="46" height="26" rx="13" fill="#D97706" stroke="#D97706" stroke-width="1" opacity="0.14"/>
+<text x="115" y="831" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="900" fill="#D97706" text-anchor="middle">稳</text>
+<text x="158" y="831" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="22" font-weight="800" fill="#172033" text-anchor="start">公办工科主线</text>
+<text x="520" y="831" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="900" fill="#D97706" text-anchor="end">黄/绿</text>
+<rect x="78" y="862" width="466" height="48" rx="15" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+<rect x="92" y="873" width="46" height="26" rx="13" fill="#16A34A" stroke="#16A34A" stroke-width="1" opacity="0.14"/>
+<text x="115" y="893" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="900" fill="#16A34A" text-anchor="middle">保</text>
+<text x="158" y="893" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="22" font-weight="800" fill="#172033" text-anchor="start">真可接受保底</text>
+<text x="520" y="893" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="900" fill="#16A34A" text-anchor="end">绿</text>
+<rect x="78" y="924" width="466" height="48" rx="15" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+<rect x="92" y="935" width="46" height="26" rx="13" fill="#94A3B8" stroke="#94A3B8" stroke-width="1" opacity="0.14"/>
+<text x="115" y="955" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="900" fill="#94A3B8" text-anchor="middle">观察</text>
+<text x="158" y="955" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="22" font-weight="800" fill="#172033" text-anchor="start">低估机会</text>
+<text x="520" y="955" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="900" fill="#94A3B8" text-anchor="end">灰/黄</text>
+<rect x="78" y="986" width="466" height="48" rx="15" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+<rect x="92" y="997" width="46" height="26" rx="13" fill="#DC2626" stroke="#DC2626" stroke-width="1" opacity="0.14"/>
+<text x="115" y="1017" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="900" fill="#DC2626" text-anchor="middle">剔除</text>
+<text x="158" y="1017" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="22" font-weight="800" fill="#172033" text-anchor="start">不可接受组</text>
+<text x="520" y="1017" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="900" fill="#DC2626" text-anchor="end">红</text>
+<rect x="626" y="610" width="526" height="458" rx="24" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#softShadow)"/>
+<text x="656" y="665" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="30" font-weight="800" fill="#172033" text-anchor="start">专业路径</text>
+<text x="656" y="701" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="400" fill="#64748B" text-anchor="start">主线清晰，避免单押热门</text>
+<text x="656" y="746" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="23" font-weight="900" fill="#172033" text-anchor="start">计算机/AI</text>
+<text x="1008" y="746" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="900" fill="#D97706" text-anchor="end">中-高</text>
+<rect x="656" y="762" width="350" height="12" rx="6" fill="#E2E8F0" stroke="none" stroke-width="1"/>
+<rect x="656" y="762" width="252" height="12" rx="6" fill="#D97706" stroke="none" stroke-width="1"/>
+<text x="1030" y="774" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="600" fill="#64748B" text-anchor="start">可冲，不做唯一主线</text>
+<text x="656" y="818" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="23" font-weight="900" fill="#172033" text-anchor="start">电子信息</text>
+<text x="1008" y="818" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="900" fill="#16A34A" text-anchor="end">高</text>
+<rect x="656" y="834" width="350" height="12" rx="6" fill="#E2E8F0" stroke="none" stroke-width="1"/>
+<rect x="656" y="834" width="322" height="12" rx="6" fill="#16A34A" stroke="none" stroke-width="1"/>
+<text x="1030" y="846" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="600" fill="#64748B" text-anchor="start">主线</text>
+<text x="656" y="890" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="23" font-weight="900" fill="#172033" text-anchor="start">电气</text>
+<text x="1008" y="890" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="900" fill="#16A34A" text-anchor="end">高</text>
+<rect x="656" y="906" width="350" height="12" rx="6" fill="#E2E8F0" stroke="none" stroke-width="1"/>
+<rect x="656" y="906" width="315" height="12" rx="6" fill="#16A34A" stroke="none" stroke-width="1"/>
+<text x="1030" y="918" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="600" fill="#64748B" text-anchor="start">主线</text>
+<text x="656" y="962" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="23" font-weight="900" fill="#172033" text-anchor="start">自动化</text>
+<text x="1008" y="962" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="900" fill="#D97706" text-anchor="end">中-高</text>
+<rect x="656" y="978" width="350" height="12" rx="6" fill="#E2E8F0" stroke="none" stroke-width="1"/>
+<rect x="656" y="978" width="273" height="12" rx="6" fill="#D97706" stroke="none" stroke-width="1"/>
+<text x="1030" y="990" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="600" fill="#64748B" text-anchor="start">主线备选</text>
+<rect x="48" y="1108" width="1104" height="250" rx="24" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#softShadow)"/>
+<text x="78" y="1163" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="30" font-weight="800" fill="#172033" text-anchor="start">风险热力图</text>
+<text x="78" y="1199" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="400" fill="#64748B" text-anchor="start">不是看学校名字，是看专业组下限和约束</text>
+<rect x="78" y="1220" width="238" height="94" rx="18" fill="#DC2626" stroke="#DC2626" stroke-width="1" opacity="0.1"/>
+<text x="102" y="1253" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="21" font-weight="900" fill="#172033" text-anchor="start">专业组下限</text>
+<text x="292" y="1253" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="900" fill="#DC2626" text-anchor="end">高</text>
+<text x="102" y="1286" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="17" font-weight="600" fill="#64748B" text-anchor="start">
+<tspan x="102" dy="0">逐组核验，不合格不服从</tspan>
+<tspan x="102" dy="21.25"></tspan>
+</text>
+<rect x="342" y="1220" width="238" height="94" rx="18" fill="#D97706" stroke="#D97706" stroke-width="1" opacity="0.1"/>
+<text x="366" y="1253" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="21" font-weight="900" fill="#172033" text-anchor="start">招生计划变化</text>
+<text x="556" y="1253" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="900" fill="#D97706" text-anchor="end">中</text>
+<text x="366" y="1286" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="17" font-weight="600" fill="#64748B" text-anchor="start">
+<tspan x="366" dy="0">查当年计划和计划变更</tspan>
+<tspan x="366" dy="21.25"></tspan>
+</text>
+<rect x="606" y="1220" width="238" height="94" rx="18" fill="#D97706" stroke="#D97706" stroke-width="1" opacity="0.1"/>
+<text x="630" y="1253" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="21" font-weight="900" fill="#172033" text-anchor="start">热门专业溢价</text>
+<text x="820" y="1253" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="900" fill="#D97706" text-anchor="end">中</text>
+<text x="630" y="1286" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="17" font-weight="600" fill="#64748B" text-anchor="start">
+<tspan x="630" dy="0">给同层次替代</tspan>
+<tspan x="630" dy="21.25"></tspan>
+</text>
+<rect x="870" y="1220" width="238" height="94" rx="18" fill="#DC2626" stroke="#DC2626" stroke-width="1" opacity="0.1"/>
+<text x="894" y="1253" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="21" font-weight="900" fill="#172033" text-anchor="start">高价项目</text>
+<text x="1084" y="1253" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="900" fill="#DC2626" text-anchor="end">高</text>
+<text x="894" y="1286" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="17" font-weight="600" fill="#64748B" text-anchor="start">
+<tspan x="894" dy="0">超预算直接剔除</tspan>
+<tspan x="894" dy="21.25"></tspan>
+</text>
+<rect x="48" y="1390" width="1104" height="118" rx="24" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#softShadow)"/>
+<text x="78" y="1438" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="28" font-weight="900" fill="#172033" text-anchor="start">待核验清单</text>
+<circle cx="300" cy="1429" r="11" fill="#2563EB" stroke="none" stroke-width="1"/>
+<path d="M 295 1429 L 299 1434 L 308 1421" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="325" y="1438" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="21" font-weight="800" fill="#172033" text-anchor="start">一分一段</text>
+<circle cx="510" cy="1429" r="11" fill="#2563EB" stroke="none" stroke-width="1"/>
+<path d="M 505 1429 L 509 1434 L 518 1421" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="535" y="1438" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="21" font-weight="800" fill="#172033" text-anchor="start">招生计划</text>
+<circle cx="720" cy="1429" r="11" fill="#2563EB" stroke="none" stroke-width="1"/>
+<path d="M 715 1429 L 719 1434 L 728 1421" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="745" y="1438" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="21" font-weight="800" fill="#172033" text-anchor="start">专业组全部专业</text>
+<circle cx="930" cy="1429" r="11" fill="#2563EB" stroke="none" stroke-width="1"/>
+<path d="M 925 1429 L 929 1434 L 938 1421" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="955" y="1438" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="21" font-weight="800" fill="#172033" text-anchor="start">招生章程</text>
+<text x="78" y="1480" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="500" fill="#64748B" text-anchor="start">仅作决策支持，不构成录取承诺；最终以省考试院、院校官网和招生章程为准。</text>
+<text x="600" y="1562" font-family="Noto Sans CJK SC, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="17" font-weight="600" fill="#94A3B8" text-anchor="middle">gaokao-guide · demo visualization</text>
+</svg>

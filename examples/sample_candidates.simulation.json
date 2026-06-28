@@ -1,0 +1,202 @@
+{
+  "model": "lightweight_rank_range_simulation",
+  "disclaimer": "用于梯度和滑档压力测试，不是官方录取概率或录取承诺。",
+  "input": {
+    "file": "examples/sample_candidates.csv",
+    "student_rank": 34500,
+    "runs": 5000,
+    "seed": 2026
+  },
+  "summary": {
+    "candidate_count": 10,
+    "simulated_no_admit_share": 0.0,
+    "first_admit_distribution": {
+      "3. 江苏大学 | 电气自动化组": 0.516,
+      "1. 南京信息工程大学 | 物理类信息组": 0.303,
+      "2. 杭州电子科技大学 | 电子信息类组": 0.134,
+      "4. 南京工业大学 | 自动化电子组": 0.037,
+      "5. 常州大学 | 电气信息组": 0.009
+    }
+  },
+  "candidates": [
+    {
+      "order": "1",
+      "school": "南京信息工程大学",
+      "group_or_major": "物理类信息组",
+      "input_tier": "冲",
+      "rank_range": [
+        30000,
+        36000
+      ],
+      "analytic_admit_share": 0.309,
+      "first_admit_share_in_order": 0.303,
+      "suggested_tier": "冲",
+      "source_status": "third-party",
+      "included_in_order_simulation": true,
+      "warnings": [
+        "信源待复核",
+        "专业组下限需核验"
+      ]
+    },
+    {
+      "order": "2",
+      "school": "杭州电子科技大学",
+      "group_or_major": "电子信息类组",
+      "input_tier": "冲",
+      "rank_range": [
+        28000,
+        35000
+      ],
+      "analytic_admit_share": 0.196,
+      "first_admit_share_in_order": 0.134,
+      "suggested_tier": "冲",
+      "source_status": "official-historical",
+      "included_in_order_simulation": true,
+      "warnings": []
+    },
+    {
+      "order": "3",
+      "school": "江苏大学",
+      "group_or_major": "电气自动化组",
+      "input_tier": "稳",
+      "rank_range": [
+        36000,
+        43000
+      ],
+      "analytic_admit_share": 0.923,
+      "first_admit_share_in_order": 0.516,
+      "suggested_tier": "保",
+      "source_status": "official-historical",
+      "included_in_order_simulation": true,
+      "warnings": [
+        "专业组下限需核验"
+      ]
+    },
+    {
+      "order": "4",
+      "school": "南京工业大学",
+      "group_or_major": "自动化电子组",
+      "input_tier": "稳",
+      "rank_range": [
+        34000,
+        41000
+      ],
+      "analytic_admit_share": 0.804,
+      "first_admit_share_in_order": 0.037,
+      "suggested_tier": "保",
+      "source_status": "official-historical",
+      "included_in_order_simulation": true,
+      "warnings": []
+    },
+    {
+      "order": "5",
+      "school": "常州大学",
+      "group_or_major": "电气信息组",
+      "input_tier": "保",
+      "rank_range": [
+        48000,
+        62000
+      ],
+      "analytic_admit_share": 0.998,
+      "first_admit_share_in_order": 0.009,
+      "suggested_tier": "保",
+      "source_status": "school-historical",
+      "included_in_order_simulation": true,
+      "warnings": []
+    },
+    {
+      "order": "6",
+      "school": "江苏海洋大学",
+      "group_or_major": "电子信息组",
+      "input_tier": "保",
+      "rank_range": [
+        62000,
+        76000
+      ],
+      "analytic_admit_share": 1.0,
+      "first_admit_share_in_order": 0.0,
+      "suggested_tier": "保",
+      "source_status": "official-historical",
+      "included_in_order_simulation": true,
+      "warnings": []
+    },
+    {
+      "order": "7",
+      "school": "安徽工业大学",
+      "group_or_major": "电气自动化组",
+      "input_tier": "保",
+      "rank_range": [
+        52000,
+        70000
+      ],
+      "analytic_admit_share": 0.998,
+      "first_admit_share_in_order": 0.0,
+      "suggested_tier": "保",
+      "source_status": "official-historical",
+      "included_in_order_simulation": true,
+      "warnings": []
+    },
+    {
+      "order": "8",
+      "school": "某民办科技学院",
+      "group_or_major": "计算机组",
+      "input_tier": "观察",
+      "rank_range": [
+        70000,
+        90000
+      ],
+      "analytic_admit_share": 1.0,
+      "first_admit_share_in_order": 0.0,
+      "suggested_tier": "观察",
+      "source_status": "missing",
+      "included_in_order_simulation": true,
+      "warnings": [
+        "信源待复核"
+      ]
+    },
+    {
+      "order": "9",
+      "school": "某中外合作项目",
+      "group_or_major": "软件工程中外合作",
+      "input_tier": "观察",
+      "rank_range": [
+        58000,
+        72000
+      ],
+      "analytic_admit_share": 1.0,
+      "first_admit_share_in_order": 0.0,
+      "suggested_tier": "观察",
+      "source_status": "third-party",
+      "included_in_order_simulation": true,
+      "warnings": [
+        "信源待复核",
+        "计划数很小"
+      ]
+    },
+    {
+      "order": "10",
+      "school": "某工科大学",
+      "group_or_major": "化工材料混合组",
+      "input_tier": "剔除",
+      "rank_range": [
+        50000,
+        65000
+      ],
+      "analytic_admit_share": 0.999,
+      "first_admit_share_in_order": 0.0,
+      "suggested_tier": "剔除",
+      "source_status": "official-historical",
+      "included_in_order_simulation": false,
+      "warnings": [
+        "含排斥项",
+        "原表标记剔除"
+      ]
+    }
+  ],
+  "model_limits": [
+    "未接入完整官方招生计划",
+    "未做历史年份回测校准",
+    "未自动识别专业组结构变化",
+    "近年位次区间来自输入表，错误会传导到模拟结果"
+  ]
+}

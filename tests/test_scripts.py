@@ -47,9 +47,34 @@ def test_render_summary_svg() -> None:
         assert "江苏 2026 物理类" in text
 
 
+def test_rank_simulator() -> None:
+    result = run([
+        sys.executable,
+        "gaokao-guide/scripts/rank_simulator.py",
+        "examples/sample_candidates.csv",
+        "--student-rank",
+        "34500",
+        "--runs",
+        "300",
+        "--seed",
+        "2026",
+    ])
+    data = json.loads(result.stdout)
+    assert data["model"] == "lightweight_rank_range_simulation"
+    assert data["summary"]["candidate_count"] == 10
+    assert 0 <= data["summary"]["simulated_no_admit_share"] <= 1
+    assert any(c["suggested_tier"] == "保" for c in data["candidates"])
+    assert any("信源待复核" in c["warnings"] for c in data["candidates"])
+    assert any(
+        c["suggested_tier"] == "剔除" and not c["included_in_order_simulation"]
+        for c in data["candidates"]
+    )
+
+
 def main() -> int:
     test_audit_candidates()
     test_render_summary_svg()
+    test_rank_simulator()
     print("OK")
     return 0
 
