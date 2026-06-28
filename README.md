@@ -34,8 +34,6 @@
 - 输出看板式摘要，减少大段文字。
 - 支持从结构化 JSON 生成一页式 SVG 汇总图。
 
-![方案看板样例](docs/assets/gaokao-summary-dashboard.png)
-
 ## 目录结构
 
 ```text
