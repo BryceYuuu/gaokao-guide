@@ -80,10 +80,54 @@ python3 install.py
 ${CODEX_HOME:-~/.codex}/skills/gaokao-guide
 ```
 
+也可以显式指定：
+
+```bash
+python3 install.py --platform codex
+```
+
+### Claude 本地 Skill
+
+Claude 的平台内置目录 `/mnt/skills/` 通常是只读挂载，只能读取官方或平台预置 Skill，不能作为自定义 Skill 的安装位置。自定义 Skill 应放在本地可写目录。
+
+全局安装，所有 Claude 会话可用：
+
+```bash
+python3 install.py --platform claude
+```
+
+默认安装位置是：
+
+```text
+${CLAUDE_HOME:-~/.claude}/skills/gaokao-guide
+```
+
+项目局部安装，仅当前项目目录生效：
+
+```bash
+python3 install.py --platform claude --scope project
+```
+
+对应位置是：
+
+```text
+./.claude/skills/gaokao-guide
+```
+
+手动安装也可以：
+
+```bash
+mkdir -p ~/.claude/skills
+cp -R gaokao-guide ~/.claude/skills/gaokao-guide
+```
+
+安装后完全退出 Claude 并重新打开，执行 `/skills` 检查是否加载。如果能正常加载，说明 `SKILL.md` 内容没有问题；如果仍然报 `/mnt/skills` 只读，通常是外部安装器、MCP 配置或环境变量仍指向系统只读目录。
+
 如果你的运行环境提示 `/mnt/skills` 是系统只读挂载，这是正常的。不要把 `/mnt/skills` 当作永久安装目录；使用上面的 `install.py` 会自动安装到用户可写目录。也可以手动指定：
 
 ```bash
 python3 install.py --target ~/.codex/skills
+python3 install.py --platform claude --target ~/.claude/skills
 ```
 
 ### 关于 `/mnt/skills` 只读
@@ -92,11 +136,30 @@ python3 install.py --target ~/.codex/skills
 
 所以这个问题不能通过开源仓库里的 installer 绕过。当前可行方案是：
 
-- 安装到用户可写目录：`${CODEX_HOME:-~/.codex}/skills/gaokao-guide`
+- Codex 安装到用户可写目录：`${CODEX_HOME:-~/.codex}/skills/gaokao-guide`
+- Claude 全局安装到用户可写目录：`${CLAUDE_HOME:-~/.claude}/skills/gaokao-guide`
+- Claude 项目局部安装到：`./.claude/skills/gaokao-guide`
 - 或者不安装为系统级 skill，直接使用 `UNIVERSAL_PROMPT.md` + `references/` 作为通用 LLM 指令包
 - 或者 fork 本仓库，在你自己的运行环境里把 `gaokao-guide/` 目录挂载到目标 LLM 可读取的位置
 
 本项目保持完全开源，解决的是“内容、方法、脚本、提示词可自由使用和迁移”，不是“强行写入平台只读挂载目录”。
+
+如果你使用本地 Skill MCP，请确认配置读取的是本地可写目录，而不是 `/mnt/skills`。示例：
+
+```json
+{
+  "mcpServers": {
+    "local-skills": {
+      "command": "local-skills-mcp",
+      "env": {
+        "SKILLS_DIR": "~/.claude/skills"
+      }
+    }
+  }
+}
+```
+
+不同 MCP 工具的环境变量名可能不同，`SKILLS_DIR` 需要以你实际使用的 MCP 文档为准。
 
 ### ChatGPT 自定义 GPT / Claude Project / Gemini Gems
 

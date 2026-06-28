@@ -71,10 +71,33 @@ def test_rank_simulator() -> None:
     )
 
 
+def test_install_dry_run_targets() -> None:
+    codex = run([sys.executable, "install.py", "--dry-run"])
+    assert "platform=codex" in codex.stdout
+    assert ".codex/skills/gaokao-guide" in codex.stdout
+
+    claude_global = run([sys.executable, "install.py", "--platform", "claude", "--dry-run"])
+    assert "platform=claude" in claude_global.stdout
+    assert ".claude/skills/gaokao-guide" in claude_global.stdout
+
+    claude_project = run([
+        sys.executable,
+        "install.py",
+        "--platform",
+        "claude",
+        "--scope",
+        "project",
+        "--dry-run",
+    ])
+    assert "scope=project" in claude_project.stdout
+    assert ".claude/skills/gaokao-guide" in claude_project.stdout
+
+
 def main() -> int:
     test_audit_candidates()
     test_render_summary_svg()
     test_rank_simulator()
+    test_install_dry_run_targets()
     print("OK")
     return 0
 
