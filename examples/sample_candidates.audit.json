@@ -1,0 +1,40 @@
+{
+  "summary": {
+    "file": "examples/sample_candidates.csv",
+    "rows": 10,
+    "detected_columns": {
+      "order": "序号",
+      "school": "学校",
+      "group_or_major": "专业组",
+      "tier": "冲稳保",
+      "source_status": "证据状态",
+      "recent_rank_range": "近年位次",
+      "seats": "计划数",
+      "risk_flags": "风险",
+      "verify_next": "待核验",
+      "obey_adjustment": "服从调剂"
+    },
+    "student_rank": 34500,
+    "tier_counts": {
+      "冲": 2,
+      "稳": 2,
+      "保": 3,
+      "观察": 2,
+      "剔除": 1
+    },
+    "safety_like_count": 3,
+    "reach_like_count": 2
+  },
+  "warnings": [
+    {
+      "severity": "medium",
+      "type": "weak_or_pending_sources",
+      "rows": [
+        2,
+        9,
+        10
+      ],
+      "count": 3
+    }
+  ]
+}

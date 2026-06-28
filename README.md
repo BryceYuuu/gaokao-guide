@@ -180,6 +180,37 @@ python3 gaokao-guide/scripts/render_summary_svg.py input.json --output gaokao-su
 
 SVG 生成是确定性的，适合承载位次、风险等级、待核验项等关键文字，避免纯 AI 生图把数字或学校名画错。
 
+## 样例与测试
+
+仓库内置了可直接查看和复现的演示材料：
+
+- [江苏案例](examples/jiangsu-case.md)：物理类中上分段，热门城市 + 工科主线。
+- [山东案例](examples/shandong-case.md)：3+3 综合，专业 + 院校模式。
+- [河南案例](examples/henan-case.md)：高竞争省份，保本科与就业路径并重。
+- [候选表示例 CSV](examples/sample_candidates.csv)：用于测试候选表审计。
+- [候选表审计输出](examples/sample_candidates.audit.json)：由 `audit_candidates.py` 生成。
+- [SVG 输入 JSON](examples/svg-summary-input.json)：用于生成一页式信息图。
+- [SVG 样例图](examples/gaokao-summary.svg)：由 `render_summary_svg.py` 生成。
+- [SVG 与数据接入路线图设计稿](docs/svg-and-roadmap-design.md)：给设计图使用的文字和结构。
+
+运行脚本测试：
+
+```bash
+python3 tests/test_scripts.py
+```
+
+重新生成样例审计输出：
+
+```bash
+python3 gaokao-guide/scripts/audit_candidates.py examples/sample_candidates.csv --student-rank 34500 --output examples/sample_candidates.audit.json
+```
+
+重新生成样例 SVG：
+
+```bash
+python3 gaokao-guide/scripts/render_summary_svg.py examples/svg-summary-input.json --output examples/gaokao-summary.svg
+```
+
 ## 关键词
 
 高考填志愿、高考报志愿、高考志愿填报、填报志愿、报考大学、选大学、选专业、专业选择、分数能上什么大学、位次能上什么学校、冲稳保、平行志愿、院校专业组、专业调剂、服从调剂、一分一段、招生计划、录取位次、志愿卡、志愿表、学校体检、专业核实、高考志愿看板、高考志愿信息图。

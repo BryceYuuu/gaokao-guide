@@ -1,0 +1,44 @@
+{
+  "title": "高考志愿方案看板",
+  "subtitle": "江苏 2026 物理类 | 位次约 34500 | 模拟稿",
+  "profile": {
+    "province": "江苏",
+    "year": "2026",
+    "track": "物理类 物化生",
+    "score_rank": "608 / 约34500名",
+    "budget": "公办普通学费优先",
+    "risk": "均衡偏稳"
+  },
+  "summary_cards": [
+    {"label": "录取安全", "status": "黄灯", "text": "有方案，但保底看专业组下限"},
+    {"label": "专业匹配", "status": "绿灯", "text": "电子信息/电气/自动化适配"},
+    {"label": "城市偏好", "status": "黄灯", "text": "热门城市会压缩选择空间"},
+    {"label": "最大风险", "status": "红灯", "text": "服从调剂进排斥专业"}
+  ],
+  "candidate_layers": [
+    {"tier": "冲", "direction": "热门城市强专业", "use": "少量上行机会", "risk": "黄/红"},
+    {"tier": "稳", "direction": "公办工科主线", "use": "主力志愿", "risk": "黄/绿"},
+    {"tier": "保", "direction": "真可接受保底", "use": "防滑档", "risk": "绿"},
+    {"tier": "观察", "direction": "低估机会", "use": "备选扩展", "risk": "灰/黄"}
+  ],
+  "major_paths": [
+    {"name": "计算机/AI", "fit": "中-高", "advice": "可冲，不做唯一主线"},
+    {"name": "电子信息", "fit": "高", "advice": "主线"},
+    {"name": "电气", "fit": "高", "advice": "主线"},
+    {"name": "自动化", "fit": "中-高", "advice": "主线备选"}
+  ],
+  "risk_items": [
+    {"risk": "专业组下限", "level": "高", "action": "逐组核验，不合格不服从"},
+    {"risk": "招生计划变化", "level": "中", "action": "查当年计划和计划变更"},
+    {"risk": "热门专业溢价", "level": "中", "action": "给同层次替代"},
+    {"risk": "高价项目", "level": "高", "action": "超预算则直接剔除"}
+  ],
+  "verify_items": [
+    "当年一分一段",
+    "当年招生计划",
+    "专业组内全部专业",
+    "招生章程/学费/校区"
+  ],
+  "next_action": "先核验专业组下限，再排最终志愿表。",
+  "footer": "仅作决策支持，不构成录取承诺；最终以省级考试院和高校官方信息为准。"
+}
